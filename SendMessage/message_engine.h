@@ -8,14 +8,14 @@
 #include "msg_wnd.h"
 
 class ClientEngine;
-typedef std::shared_ptr<ClientEngine> TPClientEnginePtr;
+typedef std::shared_ptr<ClientEngine> ClientEnginePtr;
 class ClientEngine : public std::enable_shared_from_this<ClientEngine>
 {
 	typedef ClientEngine self;
 public:
 	ClientEngine();
 	~ClientEngine();
-	static TPClientEnginePtr GetInstance();
+	static ClientEnginePtr GetInstance();
 	int registResponseListener(IResponseLister* listener);
 	int unregistResponseListener(IResponseLister* listener);
 	int doClientEngineResponse(int cmd_id, const char* cmd_buf, uint32_t cmd_buf_len);

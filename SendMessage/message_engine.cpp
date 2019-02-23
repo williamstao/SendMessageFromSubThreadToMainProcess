@@ -6,9 +6,9 @@ ClientEngine::ClientEngine()
 }
 ClientEngine::~ClientEngine() {}
 
-TPClientEnginePtr ClientEngine::GetInstance()
+ClientEnginePtr ClientEngine::GetInstance()
 {
-	static TPClientEnginePtr obj(new ClientEngine());
+	static ClientEnginePtr obj(new ClientEngine());
 	return obj;
 }
 

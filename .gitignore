@@ -1,0 +1,8 @@
+
+*.exe
+*.iobj
+*.ipdb
+*.pdb
+*.obj
+*.log
+*.tlog
